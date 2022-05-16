@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Nav from "./components/Nav";
+import Planet from "./components/Planet";
 
 function App() {
   return (
     <div className="App">
-      <h1>Planets</h1>
+      <Nav />
+      <Planet />
     </div>
   );
 }
