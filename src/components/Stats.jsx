@@ -5,7 +5,10 @@ const Stats = () => {
   return (
     <div>
       <h2>STATS</h2>
-      <StatsItem />
+      <StatsItem title="rotation time"/>
+      <StatsItem title="revolution time"/>
+      <StatsItem title="radius"/>
+      <StatsItem title="average temp."/>
     </div>
   );
 };

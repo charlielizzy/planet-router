@@ -1,9 +1,9 @@
 import React from 'react';
 
-const StatsItem = () => {
+const StatsItem = (props) => {
   return (
     <div>
-      <h3>STATS ITEM</h3>
+      <h3>STATS ITEM {props.title}</h3>
     </div>
   );
 };
