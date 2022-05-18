@@ -3,11 +3,12 @@ import MenuItem from './MenuItem';
 
 const Menu = () => {
   return (
-    <div className="text-red-600 flex">
-      <h2>MENU</h2>
+    <div className="flex justify-between font-spartan">
+      <div className="flex flex-col w-full">
       <MenuItem title="01 overview"/>
       <MenuItem title="02 internal structure"/>
-      <MenuItem title="surface geology"/>
+      <MenuItem title="03 surface geology"/>
+      </div>
     </div>
   );
 };

@@ -2,8 +2,8 @@ import React from 'react';
 
 const MenuItem = (props) => {
   return (
-    <div>
-      <h3>MENU ITEM {props.title}</h3>
+    <div className="border-2 my-1 uppercase p-4 text-xs">
+      <h3>{props.title}</h3>
     </div>
   );
 };
