@@ -8,12 +8,14 @@ const Planet = () => {
   const params = useParams()
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [planet, setPlanet] = useState("mercury");
+  const [planet, setPlanet] = useState(null);
   const [planetState, setPlanetState] = useState("overview")
 
   useEffect(() => {
+  
     fetchData(planet);
-  },[planet]);
+    
+  },[params]);
 
   
   const fetchData = async () => {
@@ -23,7 +25,9 @@ const Planet = () => {
       );
       const data = await response.json();
       setPlanet(data);
+      setPlanetState("overview")
       setLoading(false);
+      
     } catch (error) {
       setError(true);
       setLoading(false);
@@ -41,9 +45,9 @@ const Planet = () => {
 // setImage(props.image)
 
   return (
-    <div className=" grid grid-rows-3 grid-cols-4">
+    <div className="grid grid-rows-3 grid-cols-4">
       <Icon images={planet.images} planetState={planetState}/>
-      <Info name={planet.name} description={planet.overview.content}/>
+      <Info name={planet.name} description={planet} setPlanetState={setPlanetState} planetState={planetState}/>
       <Stats rotation={planet.rotation} revolution={planet.revolution} radius={planet.radius} temperature={planet.temperature}/>
     </div>
   );

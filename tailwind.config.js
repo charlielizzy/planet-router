@@ -5,7 +5,11 @@ module.exports = {
       antonio: ["Antonio", "sans-serif"],
       spartan: ["League Spartan", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "background-stars": "url('/assets/background-stars.svg')",
+      },
+    },
   },
   plugins: [],
 };

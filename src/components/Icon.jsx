@@ -9,7 +9,7 @@ const Icon = (props) => {
     } else if (props.planetState === "internal") {
       setImage(props.images.internal)
     } else {
-      setImage(props.image.geology)
+      setImage(props.images.geology)
     }
 
   })
