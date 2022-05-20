@@ -1,14 +1,25 @@
-import React from 'react';
-import MenuItem from './MenuItem';
+import React, {useState} from 'react';
+// import MenuItem from './MenuItem';
 
 const Menu = () => {
+
+  const [planetState, setPlanetState] = useState()
+
   return (
-    <div className="flex justify-between font-spartan">
-      <div className="flex flex-col w-full">
-      <MenuItem title="01 overview"/>
-      <MenuItem title="02 internal structure"/>
-      <MenuItem title="03 surface geology"/>
-      </div>
+    <div className="flex justify-between font-spartan flex-col w-full">
+     
+      <button onClick={() => setPlanetState("overview")} className="border-2 my-1 uppercase p-4 text-xs" >
+         <h3 >01 Overview</h3>
+       </button>
+
+      <button onClick={() => setPlanetState("internal")} className="border-2 my-1 uppercase p-4 text-xs" >
+        <h3 >02 Internal Structure</h3>
+      </button>
+
+      <button onClick={() => setPlanetState("geology")} className="border-2 my-1 uppercase p-4 text-xs" >
+        <h3 >03 Surface Geology</h3>
+      </button>
+  
     </div>
   );
 };
