@@ -6,9 +6,9 @@ module.exports = {
       spartan: ["League Spartan", "sans-serif"],
     },
     extend: {
-      backgroundImage: {
-        "background-stars": "url('/assets/background-stars.svg')",
-      },
+      // backgroundImage: {
+      //   "background-stars": "url('/assets/background-stars.svg')",
+      // },
     },
   },
   plugins: [],

@@ -6,5 +6,7 @@
 font-family: 'League Spartan', sans-serif; */
 
 body {
-  /* background-image: url("/assets/background-stars.svg"); */
+  background-image: url("../public/assets/background-stars.svg");
+  background-repeat: repeat;
+  background-color: #070724;
 }
