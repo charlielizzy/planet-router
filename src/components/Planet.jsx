@@ -45,7 +45,7 @@ const Planet = () => {
 // setImage(props.image)
 
   return (
-    <div className="grid grid-rows-3 grid-cols-4">
+    <div className="lg:grid grid-rows-3 grid-cols-4 sm:flex sm:flex-col sm:items-center">
       <Icon images={planet.images} planetState={planetState}/>
       <Info name={planet.name} description={planet} setPlanetState={setPlanetState} planetState={planetState}/>
       <Stats rotation={planet.rotation} revolution={planet.revolution} radius={planet.radius} temperature={planet.temperature}/>

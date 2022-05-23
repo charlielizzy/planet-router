@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 const Nav = () => {
   return (
-    <div className="text-white h-[100px] flex justify-between items-center border-b-[1px] border-white p-10 mb-5"> 
+    <div className="text-white sm:h-[130px] lg:h-[100px] flex lg:flex-row sm:flex-col justify-between items-center border-b-[1px] border-white p-10 mb-5"> 
       <h1 className="font-antonio text-3xl">THE PLANETS</h1>
       <div className="flex items-center justify-around font-spartan uppercase p-2">
         <Link to="/mercury" className="p-1">Mercury</Link>

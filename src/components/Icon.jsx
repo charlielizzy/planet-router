@@ -20,7 +20,7 @@ const Icon = (props) => {
  
   
   return (
-    <div className="grid row-start-1 row-end-3 col-start-1 col-end-3 m-4 h-[400px] w-[400px] justify-center items-center absolute">
+    <div className="lg:grid row-start-1 row-end-3 col-start-1 col-end-3  m-4 h-[400px] w-[400px] justify-center items-center">
       <img src={`/assets/${image}`}/>
       {layerImage === null ? null : <img src={`/assets/${layerImage}`} className="w-[129px] absolute z-30 m-[137px] mt-[400px]"/>}
     </div>
