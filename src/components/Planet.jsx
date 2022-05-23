@@ -49,6 +49,7 @@ const Planet = () => {
       <Icon images={planet.images} planetState={planetState}/>
       <Info name={planet.name} description={planet} setPlanetState={setPlanetState} planetState={planetState}/>
       <Stats rotation={planet.rotation} revolution={planet.revolution} radius={planet.radius} temperature={planet.temperature}/>
+      
     </div>
   );
 };

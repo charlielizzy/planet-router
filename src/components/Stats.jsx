@@ -6,7 +6,7 @@ const Stats = (props) => {
 
   return (
     <div className="grid row-start-3 row-end-3 col-start-1 col-end-5 m-4 h-[130px] uppercase">
-      <div className="flex justify-between">
+      <div className="flex justify-around">
       <StatsItem title="rotation time" data={props.rotation}/>
       <StatsItem title="revolution time" data={props.revolution}/>
       <StatsItem title="radius" data={props.radius}/>
